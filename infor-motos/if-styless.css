@@ -1,0 +1,193 @@
+/* Estilos Gerais */
+* {
+    font-family: "poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(169, 175, 175, 0.372);
+    color: #333;
+    overflow: hidden;
+}
+
+header {
+    /* position: fixed;*/
+    width: 100%;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 400px;
+    z-index: 2;
+
+    & .imagem {
+        width: 60px;
+        height: 60px;
+        margin-left: 20px;
+        border-radius: 50px;
+        border: none;
+        transform: 0, 4s;
+
+        background-image: radial-gradient(#cb7bdf, #630ab1f2);
+
+        /* 
+        
+       */
+
+    }
+
+    & nav {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        width: 100%;
+        margin-left: 775px;
+
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            background-image: radial-gradient(#cb7bdf, #630ab1f2);
+            width: 60px;
+
+            transition: transform 0.1s ease;
+
+            & img {
+                width: 35px;
+                height: 35px;
+                text-decoration: none;
+                color: #630ab1f2;
+            }
+
+
+        }
+
+        & a:active {
+            transform: scale(0.4);
+        }
+
+
+    }
+
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+/* Área da Moto (Hero Section) */
+.moto-hero {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.moto-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    background-color: #3d343f;
+    border-radius: 10px;
+}
+
+.cb1000 {
+    margin-top: 10px;
+}
+
+.cbr650 {
+    margin-top: 20px;
+}
+
+.moto-image img {
+    max-width: 60%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.moto-info {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 150px;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.tagline {
+    color: #ff4500;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e03e00;
+}
+
+/* Especificações */
+.tech-specs {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.spec-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #630ab1f2;
+    border-radius: 3px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .moto-hero {
+        flex-direction: column;
+    }
+}
