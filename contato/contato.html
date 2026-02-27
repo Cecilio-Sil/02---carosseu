@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
-    <section>
-        <h2>Entre em contato</h2>
-        <form action="" method="post">
+    <section class="seção">
+        <h2 class="titulo">Entre em contato</h2>
+        <form class="formulario" action="https://formsubmit.co/cecilionetom@hotmail.com" method="post">
+            
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contato/obrigado.html">
+
+            
             <label>Nome</label>
-            <input type="text" name="name" placeholder="Digio o seu nome" autocomplete="off">
+            <input type="text" name="name" placeholder="Digite o seu nome" autocomplete="off">
 
             <label>Telefone</label>
-            <input type="text" name="telefone" placeholder="Digio o seu melhor número" autocomplete="off"             >
+            <input type="tel" name="telefone" placeholder="Digite o seu melhor número" autocomplete="off"             >
 
             <label>E-mail</label>
             <input type="email" name="email" placeholder="Digite seu email" autocomplete="off">
 
             <label>Mensagem</label>
-            <textarea name="mensagem" cols="30" rows="10" placeholder="Digio uma mensagem para mim"></textarea>
+            <textarea name="mensagem" cols="30" rows="4" placeholder="Digite uma mensagem para mim"></textarea>
 
-
+            
             <button type="submit">ENVIAR</button>
-        </form>
+
+        </formcla>
 
     </section>
 </body>
